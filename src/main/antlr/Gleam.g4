@@ -127,7 +127,7 @@ caseClausePattern: pattern (COMMA pattern)*  (COMMA)?;
 caseClausePatterns: caseClausePattern (BAR caseClausePattern)* (BAR)?;
 caseClause: caseClausePatterns (caseClauseGuard)? R_ARROW expression;
 //caseClauses: (caseClause)+;
-caseSubjects: expressionTryList1;
+caseSubjects: (expression | try) (COMMA (expression | try))*;
 case: CASE caseSubjects CURLY_OPEN caseClause+ CURLY_CLOSE;
 
 useArgs: identifier | identifier COMMA useArgs;
