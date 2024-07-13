@@ -1,6 +1,11 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 # Gleam Language Changelog
 
+## [2024.6.2]
+- Add `let assert` syntax to the parser
+- Add Gleam LSP server
+  - Breaking: Using a custom LSP requires intellij Ultimate
+
 ## [2024.6.1]
 - Parser and coloring improvements
 

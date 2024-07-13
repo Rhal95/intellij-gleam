@@ -13,6 +13,7 @@
 <!--    </vendor>-->
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.ultimate</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <fileType name="Gleam"
@@ -36,5 +37,7 @@
                    implementationClass="se.clau.gleam.ide.highlight.GleamAnnotator" />
 
         <colorSettingsPage implementation="se.clau.gleam.ide.colors.GleamColorSettingsPage"/>
+
+        <platform.lsp.serverSupportProvider implementation="se.clau.gleam.lsp.GleamLspServerProvider" />
     </extensions>
 </idea-plugin>
